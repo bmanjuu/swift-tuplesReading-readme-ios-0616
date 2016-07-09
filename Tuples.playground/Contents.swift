@@ -5,7 +5,9 @@ func downloadImage(atURL url: String) -> (Bool, String) {
     let error = "Image no longer exists"
     return (false, error)
 }
+//NOTE: think of it like plotting a point--to get there you need both x and y coordinates!
 
+//accessing the elements of a tuple is similar to accessing the properties of an object in objective-c. use dot notation!
 let result = downloadImage(atURL: "http://example.com/image.png")
 result.0
 result.1
